@@ -16,7 +16,7 @@ body{
       "slnt" 0,
       "FLAR" 0,
       "VOLM" 0;
-      background-image: url(/image/bacjgroyund.jpg);
+      background-image: url("../imagens/background.jpg")
       backdrop-filter: blur(3px);
 }
 
