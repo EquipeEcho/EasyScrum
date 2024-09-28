@@ -1,0 +1,60 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "FLAR" 0,
+      "VOLM" 0;
+      background-image: url(/image/bacjgroyund.jpg);
+      backdrop-filter: blur(3px);
+}
+
+
+
+.Nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    height: 64px;
+}
+.Nav img{
+    height: 64px;
+    
+}
+.Nav h3{
+    text-align: center;
+}
+.NavSP{
+    text-align: end;
+    padding: 0 2vh 0 0;
+}
+.NavES{
+    text-align: start;
+    padding: 0 0 0 2vh;
+    width: max-content;
+    height: max-content;
+}
+
+
+.ContentHome{
+    text-align: center;
+    padding: 0 25vh;
+}
+.Content{
+    display: grid;
+    grid-template-columns: 10% auto;
+    margin: 4vh 0;
+    
+}
