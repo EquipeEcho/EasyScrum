@@ -16,7 +16,7 @@ body{
       "slnt" 0,
       "FLAR" 0,
       "VOLM" 0;
-      background-image: url("../imagens/background.jpg")
+      background-image: url(/image/bacjgroyund.jpg);
       backdrop-filter: blur(3px);
 }
 
@@ -57,4 +57,49 @@ body{
     grid-template-columns: 10% auto;
     margin: 4vh 0;
     
+}
+.ContentImge img{
+    height: 80vh;
+    border-radius: 5px;
+}
+.ContentList{
+    position: sticky;
+    top: 2vh;
+    margin: 4vh 0 0 1vh;
+    padding: 1vh 3vh 1vh 0;
+    height: max-content;
+    width: max-content;
+    background-color: rgb(212, 0, 0);
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px;
+}
+.ContentList a{
+    text-decoration: none;
+    color: white;
+}
+.ContentText{
+    margin: 0 7vh;
+    padding: 3vh 3vh;
+    border-radius: 12px;
+    background-color: white;
+}
+.ContentText img{
+    width: 1200px;
+    margin-top: 4vh;
+    border-radius: 4px;
+}
+.ContentTextTitle{
+    text-align: center;
+}
+.Footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin-top: auto;
+    height: 50px;
+    background-color: rgb(207, 207, 207);
+    padding: 28px 0 0 0;
+}
+.Footer p{
+   margin: 0 0 0 20px;
 }
