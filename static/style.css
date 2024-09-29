@@ -16,11 +16,9 @@ body{
       "slnt" 0,
       "FLAR" 0,
       "VOLM" 0;
-      background-image: url(/image/bacjgroyund.jpg);
+      background-image: url(../imagens/background.jpg);
       backdrop-filter: blur(3px);
 }
-
-
 
 .Nav{
     display: grid;
@@ -46,7 +44,6 @@ body{
     width: max-content;
     height: max-content;
 }
-
 
 .ContentHome{
     text-align: center;
