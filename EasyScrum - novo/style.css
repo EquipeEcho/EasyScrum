@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f3f5;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+}
+
+.navbar .menu img {
+    height: 60px;
+    padding-left: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.6s ease, color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #e91e63;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero {
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.247);
+    background-image: url('imagens/education-scholarship-university-concept-lovely-teenage-girl-picked-best-choice-where-study-want.jpg');
+    background-position: center top;
+    background-size: 90%; 
+    background-repeat: no-repeat
+}
+
+.hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left: 30%;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #f3e5f5;
+    padding-left: 30%;
+}
+
+audio {
+    display: block;
+    margin: 40px auto; 
+    width: 80%; 
+    max-width: 800px; 
+}
+
+
+
+
+.hero input[type = "button"]{
+    background-color: #FF0054;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11pt;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-section {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e91e63;
+}
+
+.content-section img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+}
+
