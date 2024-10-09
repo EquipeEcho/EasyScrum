@@ -24,6 +24,7 @@ body {
     width: 100%;
     top: 0;
     box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+    z-index: 1;
 }
 
 .navbar .menu img {
@@ -62,11 +63,24 @@ body {
     position: relative;
     color: white;
     background-color: rgba(0, 0, 0, 0.247);
-    background-image: url('imagens/education-scholarship-university-concept-lovely-teenage-girl-picked-best-choice-where-study-want.jpg');
-    background-position: center top;
-    background-size: 90%; 
-    background-repeat: no-repeat
+    background-image: url('pixelcut-export.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 500px; 
 }
+
+.hero input[type="button"] {
+    background-color: #FF0054;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11pt;
+    position: absolute;
+}
+
+
 
 .hero::before {
     position: absolute;
@@ -93,22 +107,39 @@ body {
 }
 
 audio {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
     display: block;
     margin: 40px auto; 
     width: 80%; 
     max-width: 800px; 
 }
 
-
-
-
-.hero input[type = "button"]{
-    background-color: #FF0054;
-    color: white;
-    padding: 10px 10px 10px 10px;
+audio::-webkit-media-controls-panel {
+    padding-left: 13px;
+    background-color: #1abc9c;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 11pt;
+}
+
+audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-pause-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #fff; 
+    border-radius: 10px;
+}
+
+audio::-webkit-slider-thumb {
+    background-color: #1abc9c;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 
 .content {
