@@ -4,7 +4,7 @@ Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividad
 
 # Índice
 * [Objetivo do Projeto](#objetivo-do-projeto)
-* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-(vídeos-e-apresentações)-das-sprints)
+* [Funcionalidades e registros da Sprint](#Funcionalidades-e-registros-(vídeos-e-apresentações)-das-sprints)
 * [Backlog do produto](#Backlog-do-produto)
 * [Competências desenvolvidas](#competências-desenvolvidas)
 * [Autores](#autores)
@@ -16,11 +16,11 @@ Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da 
 
 Sprint | Previsão | Status|
 |------|--------|------|
-|Kick Off | 02/09/2024 - 06/09/2024 | concluido|
-|01 | 09/09 - 29/09 | em progresso |
-|02|  07/10 - 27/10 | a fazer |
-|03| 04/11 - 24/11 | a fazer|
-|Feira de Soluções | 12/12/24 |a fazer |
+|<p style="text-align">Kick Off |<p style="text-align"> 02/09/2024 - 06/09/2024 | <p style="text-align"> Concluido |
+|<p style="text-align">Sprint 1 |<p style="text-align"> 09/09 - 29/09 |<p style="text-align"> Concluído |
+|<ins><p style="color:red">Sprint 2</p></ins>|<ins><p style="color:red">07/10 - 27/10</p></ins>|<ins><p style="color:red">em andamento</p></ins>|
+|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Não inciado|
+|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Não inciado |
 
 # Objetivo do Projeto
 Desenvolvimento de site informativo e educacional sobre o método Scrum.
@@ -30,10 +30,9 @@ Desenvolvimento de site informativo e educacional sobre o método Scrum.
 * Primeiro projeto de API da Equipe Echo, turma de ADS da Fatec-SJC;
 * Desenvolver habilidades técnicas.
 
-# Funcionalidades e registros (vídeos e apresentações) das sprints
+# Funcionalidades e registros da Sprint:
 
-Apresentação das funcionalidades.
-Confira a seguir uma demonstração do andamento do produto e suas funcionalidades atuais:
+Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do andamento do produto e suas funcionalidades atuais:</p>
 
 [![Nome do Vídeo](https://img.youtube.com/vi/FzoyVbR9IO8/0.jpg)](https://www.youtube.com/watch?v=FzoyVbR9IO8)
 
@@ -43,19 +42,22 @@ Confira a seguir uma demonstração do andamento do produto e suas funcionalidad
 * Notion
 * Discord
 * VSCode
+* HTML
+* CSS
 
 # Backlog do produto
 
-| Prioridades | UserStories  | ID/PBI  | Estimativa (Planning Poker)  |
-|---|---|---|---|
-| Alta  | João é um funcionário novo e precisa de uma interface mais intuitiva, para entender tão bem quanto os demais funcionários sobre o método.  | Protótipo | 8 |
-| Média |  Maria faz parte da equipe de treinamento dos novos funcionários, ela já conhece o método, mas quer se aprofundar nos tópicos do Scrum. Necessita ver detalhes do assunto, para que com isso possa sanar duvidas dos novos contratados.  | Tópicos do site | 5 |
-| Média | Diego é gerente e não tem muito tempo, ele atua como SM em sua equipe e precisa saber exemplos práticos do que pode fazer como SM, para implementar o mais rápido possível e evitar atrasos em sua equipe | Exemplos práticos | 5 |
-| Média | Matheus é um funcionário mais velho e grava melhor as informações quando há  imagens exemplificando e sendo relacionadas ao assunto. Com isso ele irá nivelar seu conhecimento aos demais de forma mais rápida.  | Imagens do Site | 3 |
-| Alta | Os funcionários precisam lembrar sobre o que aprenderam com os tópicos Scrum, para saber aplicar o método de modo eficaz.  | Teste de Nivelamento | 21 |
-| Baixa | Mario é um funcionário com deficiências visuais e precisam igualmente se informar do método, para que todos tenham acesso ao mesmo material  | Material de apoio (acessibilidade) | 2 |
-| Média | Os funcionários precisam saber como acessar o Easy Scrum, para utilizar de forma correta e poder aplicar o método.  | Manual do Usuário | 5 |
-  
+| ID | Sprint | Prioridades | UserStories | Estimativa (Planning Poker)  |
+|---|---|---|---|---|
+| I | 1 | Alta  | João é um funcionário novo e precisa de uma interface mais intuitiva, para entender tão bem quanto os demais funcionários sobre o método.  | 8 |
+| II | 1/2 | Média | Matheus é um funcionário mais velho e grava melhor as informações quando há  imagens exemplificando e sendo relacionadas ao assunto. Com isso ele irá nivelar seu conhecimento aos demais de forma mais rápida.  (imagens) | 3 |
+| III | 1 | Baixa | Mario é um funcionário com deficiência visual e precisam igualmente se informar do método, para que todos tenham acesso ao mesmo material (material de apoio) | 13 |
+| IV | 2 | Alta | Os funcionários precisam lembrar sobre o que aprenderam com os tópicos Scrum, para saber aplicar o método de modo eficaz. (teste/form)  | 2 |
+| V | 2 | Alta | Os funcionários precisam saber como acessar o Easy Scrum, para utilizar de forma correta e poder aplicar o método. (Manual de usuário) Maria faz parte da equipe de treinamento dos novos funcionários, ela já conhece o método, mas quer se aprofundar nos tópicos do Scrum. Necessita ver detalhes do assunto, para que com isso possa sanar duvidas dos novos contratados. (caixas de conteúdo) | 5 |
+| VI | 2 | Alta | Como usuário  tendo contato inicial com o Easy Scrum, preciso de uma home mais organizada, para poder aprender melhor sobre o método e aplicar com minha equipe. (estilização da home) | 8 |
+| VII | 3 | Alta | Como cliente, quero ter o produto finalizado e funcionando, para poder testar o conhecimento dos meus funcionários e  já aplicar o método Scrum. (testar o site) | 5 |
+| VIII | 3 | Alta |  Os funcionários precisam saber como acessar o Easy Scrum, para utilizar de forma correta e poder aplicar o método. | 8 |  
+
 # Competências desenvolvidas
 
 ## Hard Skill (saber tecnológico)
@@ -90,7 +92,7 @@ Confira a seguir uma demonstração do andamento do produto e suas funcionalidad
 # Autores
 |    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Product Owner |   Vivian Santos         |     [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/vivian-maria-oliveira-298626235) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/vivianSantos0101)              |
+| Product Owner | Vivian Santos         |     [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/vivian-maria-oliveira-298626235) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/vivianSantos0101)              |
 | Scrum Master  | Bruna Matsunaga |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/bruna-hayashi-1b4a71324/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/bruna-hm)     |
 |  Scrum Team   | Kayan Matta |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/kayan-da-matta-453905253) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/kayanmatta)        |
 |  Scrum Team   | Lucas Verdi |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caio-vitor-c1/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/VerdiLucas)        |
