@@ -8,3 +8,8 @@ h2 {
 #foto-logo{
     height: 40px;
 }
+
+
+.accordion-button {
+    --bs-accordion-border-color: transparent;
+  }
