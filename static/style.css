@@ -1,7 +1,10 @@
-.teste_container {
+.teste_container{
     padding: 0;
 }
 
 h2 {
     text-align: center;
+}
+#foto-logo{
+    height: 40px;
 }
