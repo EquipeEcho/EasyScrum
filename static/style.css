@@ -9,7 +9,12 @@ h2 {
     height: 40px;
 }
 
-
+.accordion{
+    --bs-accordion-active-color: rgb(255, 255, 255);
+}
 .accordion-button {
-    --bs-accordion-border-color: transparent;
+    --bs-accordion-active-bg:rgba(131, 5, 5, 0.918);
+    --bs-accordion-btn-focus-box-shadow: ;
+    --bs-accordion-active-color: rgb(255, 255, 255);
+    --bs-accordion-btn-active-icon: 
   }
