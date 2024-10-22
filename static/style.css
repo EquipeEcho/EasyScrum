@@ -13,8 +13,14 @@ h2 {
     --bs-accordion-active-color: rgb(255, 255, 255);
 }
 .accordion-button {
-    --bs-accordion-active-bg:rgba(131, 5, 5, 0.918);
+    --bs-accordion-active-bg:rgb(207, 15, 15);
     --bs-accordion-btn-focus-box-shadow: ;
-    --bs-accordion-active-color: rgb(255, 255, 255);
+    --bs-accordion-active-color: rgb(255, 253, 253);
     --bs-accordion-btn-active-icon: 
   }
+.border-image-2{
+    background-image: linear-gradient(to right,rgb(196, 67, 67),rgb(123, 31, 31)) ;
+}
+.border-image-1{
+    background-image: linear-gradient(to right,rgb(123, 31, 31),rgb(196, 67, 67)) ;
+}
