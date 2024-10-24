@@ -50,7 +50,7 @@ Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do and
 | ID | Sprint | Prioridades | UserStories | Estimativa (Planning Poker)  |
 |---|---|---|---|---|
 | I | 1 | Alta  | João é um funcionário novo e precisa de uma interface mais intuitiva, para entender tão bem quanto os demais funcionários sobre o método.  | 8 |
-| II | 1/2 | Média | Matheus é um funcionário mais velho e grava melhor as informações quando há  imagens exemplificando e sendo relacionadas ao assunto. Com isso ele irá nivelar seu conhecimento aos demais de forma mais rápida.  (imagens) | 3 |
+| II | 1 | Média | Matheus é um funcionário mais velho e grava melhor as informações quando há  imagens exemplificando e sendo relacionadas ao assunto. Com isso ele irá nivelar seu conhecimento aos demais de forma mais rápida.  (imagens) | 3 |
 | III | 1 | Baixa | Mario é um funcionário com deficiência visual e precisam igualmente se informar do método, para que todos tenham acesso ao mesmo material (material de apoio) | 13 |
 | IV | 2 | Alta | Os funcionários precisam lembrar sobre o que aprenderam com os tópicos Scrum, para saber aplicar o método de modo eficaz. (teste/form)  | 2 |
 | V | 2 | Alta | Os funcionários precisam saber como acessar o Easy Scrum, para utilizar de forma correta e poder aplicar o método. (Manual de usuário) Maria faz parte da equipe de treinamento dos novos funcionários, ela já conhece o método, mas quer se aprofundar nos tópicos do Scrum. Necessita ver detalhes do assunto, para que com isso possa sanar duvidas dos novos contratados. (caixas de conteúdo) | 5 |
