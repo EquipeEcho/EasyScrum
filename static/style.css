@@ -24,3 +24,12 @@ h2 {
 .border-image-1{
     background-image: linear-gradient(to right,rgb(123, 31, 31),rgb(196, 67, 67)) ;
 }
+
+audio::-webkit-media-controls-panel{
+    background-image: linear-gradient(to left, orange, rgba(255, 0, 0, 0.833));
+}
+audio::-webkit-media-controls-current-time-display, ::-webkit-media-controls-time-remaining-display{
+    color: white;
+}
+
+
