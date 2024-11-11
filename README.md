@@ -17,24 +17,24 @@ Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da 
 Sprint | Previsão | Status|
 |------|--------|------|
 |<p style="text-align">Kick Off |<p style="text-align"> 02/09 - 06/09 | <p style="text-align"> Concluido |
-|<p style="text-align">Sprint 1 |<p style="text-align"> 09/09 - 29/09 |<p style="text-align"> Concluído |
-|<p style="text-align"><ins>Sprint 2|<p style="text-align"><ins>07/10 - 27/10|<p style="text-align"><ins>em andamento|
-|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Não inciado|
-|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Não inciado |
+|<p style="text-align">Sprint 1 |<p style="text-align"> 09/09 - 29/09 |<p style="text-align"> Concluída |
+|<p style="text-align">Sprint 2|<p style="text-align">07/10 - 27/10|<p style="text-align">Concluída |
+|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Não inciada|
+|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Produto em andamento |
 
 # Objetivo do Projeto
 Desenvolvimento de site informativo e educacional sobre o método Scrum.
 * Ensinar o método Scrum;
 * Tornar fácil o entedimento do método para uma variedade de leitores;
 * Criação de imagens e áudios como recursos de mídia;
-* Primeiro projeto de API da Equipe Echo, turma de ADS da Fatec-SJC;
 * Desenvolver habilidades técnicas.
+* Projeto de API da Equipe Echo, turma de ADS da Fatec-SJC;
 
 # Funcionalidades e registros da Sprint:
 
 Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do andamento do produto e suas funcionalidades atuais:</p>
 
-[![Nome do Vídeo](https://img.youtube.com/vi/FzoyVbR9IO8/0.jpg)](https://www.youtube.com/watch?v=FzoyVbR9IO8)
+[![Nome do Vídeo](https://img.youtube.com/vi/1GKDhLyRYvY/0.jpg)](https://youtu.be/1GKDhLyRYvY?si=34cEZr1cVi3cvraF)
 
 ## Tecnologias Utilizadas
 
@@ -66,11 +66,11 @@ Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do and
   
 | Tecnologia/Metodologia | Classificação |
 | ---------------------- | ------------- |
-| GitHub | ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆ |
-| Gestão de Projetos | ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆ |
-| Scrum Master | ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ |
-| Product Owner | ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ |
-| Git Projects | ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆ |
+| GitHub | ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
+| Gestão de Projetos | ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
+| Scrum Master | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
+| Product Owner | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
+| Git Projects | ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
  
 </details>
 
@@ -80,12 +80,12 @@ Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do and
 
 | Habilidades | Classificação |
 | ---------------------- | ------------- |
-| Colaboração | ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ |
-| Proatividade| ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆ |
-| Pensamento Crítico | ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ ☆ |
-| Gerenciamento de Tempo | ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ |
-| Adaptabilidade | ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ |
-| Resiliência | ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ ☆ |
+| Colaboração | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
+| Proatividade| ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
+| Pensamento Crítico | ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ |
+| Gerenciamento de Tempo | ★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆ |
+| Adaptabilidade | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
+| Resiliência | ★ ★ ★ ★ ★ ★ ★ ★ ☆ ☆ |
 
 </details>
 
