@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ta pegando</h1>
+    {% for row in rows %}
+    <h1>{{ row['Nome'] }}</h1>
+    <p>Quiz 1 = {{ row['quiz'] }}</p>
+    <p>Quiz 2 = {{ row['quizz'] }}</p>
+    <p>Quiz 3 = {{ row['quizzz'] }}</p>
+    <p>Quiz 4 = {{ row['quizzzz'] }}</p>
+    <p>Quiz 5 = {{ row['quizzzzz'] }}</p>
+    {% endfor %}
+</body>
+</html>

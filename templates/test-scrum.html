@@ -51,26 +51,29 @@
         </section>              
       </div>
       <section>
-        <form method="get">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input name="senha" type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+        Bota <i class="bi bi-box-arrow-in-up-right"></i>
+        <form action="{{url_for('insert')}}" method="POST">
+          <input type="text" name="nome" id="nome">
+          <input type="text" name="CPF" id="CPF">
+          <input type="hidden" id="Q" name="Q" value="quizz">
+          <input type="hidden" id="pts" name="pts" value="5">
+          <input type="submit" value="submit">
+        </form>
+      </section>
+      <section>
+        tira <i class="bi bi-box-arrow-up-right"></i>
+        <form action="{{url_for('delete')}}" method="POST">
+          <input type="text" name="nome" id="nome">
+          <input type="text" name="CPF" id="CPF">
+          <input type="hidden" id="Q" name="Q" value="quizz">
+          <input type="hidden" id="pts" name="pts" value="5">
+          <input type="submit" value="submit">
         </form>
       </section>
   </main>
 
     <footer class="container-fluid bg-dark fixed-bottom">
+      <a href="{{ url_for('mostra') }}">AAAAAAAAAAAAAAAAAAAAAAAAA</a>
         <section class="row h-10">
             <div class="col-fluid text-center text-white pt-4 pb-4">
                 <span class="align-middle">Site criado pela equipe Echo | Todos os direitos reservados</span>
