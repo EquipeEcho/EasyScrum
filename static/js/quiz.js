@@ -1,95 +1,237 @@
-const quizData = [
-    {
-        question: "Qual é o principal papel do Product Owner (P.O.) no Scrum?",
-        a: "Desenvolver código de Software",
-        b: "Facilitar reuniões diárias",
-        c: "Maximizar o valor do produto",
-        d: "Gerenciar a equipe de desenvolvimento",
-        correct: "c"
-    },
-    {
-        question: "Qual evento Scrum é dedicado a revisar o que foi feito durante a Sprint com os stakeholders?",
-        a: "Sprint Planning",
-        b: "Sprint Review",
-        c: "Daily Scrum",
-        d: "Sprint Restropective",
-        correct: "b"
-    },
-    {
-        question: "O que é o Increment no Scrum?",
-        a: "Um planejamento futuro do projeto",
-        b: "Uma lista de melhorias a serem feitas",
-        c: "Um produto funcional e potencialmente liberável ao fim de uma Sprint",
-        d: "Um conjunto de regras para o projeto",
-        correct: "c"
-    },
-    {
-        question: "Qual artefato no Scrum contém tudo o que precisa ser feito para o produto?",
-        a: "Sprint Backlog",
-        b: "Product Backlog",
-        c: "Incremento",
-        d: "Brundown Chart",
-        correct: "b"
-    },
-    {
-        question: "Quem é responsável por remover impedimentos no progresso da equipe Scrum?",
-        a: "Product Owner",
-        b: "Desenvolvedores",
-        c: "Scrum Master",
-        d: "Stakeholders",
-        correct: "c"
-    },
-    {
-        question: "O que define quando um item do backlog está pronto?",
-        a: "Sprint Goal",
-        b: "Definition of Done",
-        c: "Velocity",
-        d: "Technical Debt",
-        correct: "b"
-    },
-    {
-        question: "Qual é o ciclo de trabalho fixo no Scrum onde se cria um incremento utilizável?",
-        a: "Sprint",
-        b: "Refinement",
-        c: "Review",
-        d: "Epic",
-        correct: "a"
-    },
-    {
-        question: "Qual é a reunião diária de 15 minutos para alinhar o progresso da Sprint?",
-        a: "Sprint Review",
-        b: "Sprint Restropective",
-        c: "Daily Scrum",
-        d: "Sprint Planning",
-        correct: "c"
-    },
-    {
-        question: "O que é uma User Story no contexto do Scrum?",
-        a: "Uma descrição curta de uma funcionalidade do ponto de vista do usuário",
-        b: "Um documento que define o plano da Sprint",
-        c: "Um gráfico de progresso do projeto",
-        d: "Um ciclo de trabalho fixo de 1 a 4 semanas",
-        correct: "a"
-    },
-    {
-        question: "O que é o Sprint Goal no Scrum?",
-        a: "A quantidade de trabalho que deve ser feita",
-        b: "O objetivo que a equipe espera alcançar ao final da Sprint",
-        c: "A lista de tarefas técnicas",
-        d: "O gráfico que mostra o progresso do trabalho",
-        correct: "b"
-    }
-];
+const quizData = {
+    "Teoria do Scrum": [
+        {
+            question: "Qual é o principal objetivo do Scrum?",
+            a: "Reduzir o número de reuniões",
+            b: "Entregar um produto completo em uma única etapa",
+            c: "Incrementar o valor do produto de forma contínua", 
+            d: "Seguir rigorosamente o plano inicial",
+            correct: "c"
+        },
+        {
+            question: "Quem idealizou o framework Scrum?",
+            a: "Jeff Bezos e Elon Musk",
+            b: "Ken Schwaber e Jeff Sutherland", 
+            c: "Mike Beedle e Bill Gates",
+            d: "Steve Jobs e Mike Beedle",
+            correct: "b"
+        },
+        {
+            question: "Qual princípio orienta as equipes no Scrum?",
+            a: "Estrutura hierárquica rígida",
+            b: "Flexibilidade e adaptação", 
+            c: "Documentação detalhada obrigatória",
+            d: "Processo unificado para todas as equipes",
+            correct: "b"
+        },
+        {
+            question: "Qual é o foco do Scrum em relação ao trabalho em equipe?",
+            a: "Definir funções fixas e inalteráveis",
+            b: "Estimular a auto-organização e multifuncionalidade",
+            c: "Centralizar decisões no Scrum Master",
+            d: "Limitar a colaboração",
+            correct: "b"
+        },
+        {
+            question: "Qual termo, originado do rugby, inspira o Scrum?",
+            a: "Goal Kick",
+            b: "Scrum", 
+            c: "Offside",
+            d: "Tackle",
+            correct: "b"
+        }
+    ],
+    "Como aplicar o scrum": [
+        {
+            question: "Qual evento Scrum inicia o planejamento da Sprint?",
+            a: "Sprint Review",
+            b: "Sprint Planning", 
+            c: "Daily Scrum",
+            d: "Sprint Retrospective",
+            correct: "b"
+        },
+        {
+            question: "O que deve ser feito diariamente para alinhar o progresso?",
+            a: "Sprint Review",
+            b: "Sprint Planning",
+            c: "Daily Scrum", 
+            d: "Sprint Retrospective",
+            correct: "c"
+        },
+        {
+            question: "Durante qual evento os itens do backlog são detalhados e priorizados?",
+            a: "Backlog Refinement", 
+            b: "Sprint Review",
+            c: "Daily Scrum",
+            d: "Sprint Retrospective",
+            correct: "a"
+        },
+        {
+            question: "Qual é o principal objetivo da Sprint Review?",
+            a: "Revisar o trabalho concluído com os stakeholders", 
+            b: "Identificar melhorias no processo",
+            c: "Alinhar metas diárias da equipe",
+            d: "Planejar o próximo Sprint",
+            correct: "a"
+        },
+        {
+            question: "Qual é o papel do Sprint Goal?",
+            a: "Determinar a quantidade de trabalho realizado",
+            b: "Orientar o objetivo do time durante a Sprint", 
+            c: "Listar tarefas individuais",
+            d: "Garantir o prazo final do projeto",
+            correct: "b"
+        }
+    ],
+    "Vantagens do scrum": [
+        {
+            question: "Qual vantagem o Scrum oferece às equipes?",
+            a: "Ritmo de trabalho insustentável",
+            b: "Melhoria contínua", 
+            c: "Redução do tempo de planejamento",
+            d: "Trabalho individual mais eficiente",
+            correct: "b"
+        },
+        {
+            question: "Como o Scrum mantém a motivação da equipe?",
+            a: "Ao definir prazos rigorosos",
+            b: "Ao promover autonomia e auto-organização", 
+            c: "Ao eliminar reuniões",
+            d: "Ao centralizar decisões no Product Owner",
+            correct: "b"
+        },
+        {
+            question: "Qual benefício é resultado da remoção de impedimentos no Scrum?",
+            a: "Processo mais eficiente", 
+            b: "Menos revisões necessárias",
+            c: "Menor participação dos stakeholders",
+            d: "Maior dependência de liderança",
+            correct: "a"
+        },
+        {
+            question: "Por que o Scrum é considerado flexível?",
+            a: "Permite mudanças frequentes para melhor alinhamento com o objetivo", 
+            b: "Dispensa o uso de artefatos",
+            c: "Não requer reuniões regulares",
+            d: "Exige documentação detalhada",
+            correct: "a"
+        },
+        {
+            question: "Qual fator do Scrum facilita o desenvolvimento ágil?",
+            a: "Uso obrigatório de ferramentas específicas",
+            b: "Incrementos pequenos e frequentes", 
+            c: "Planejamento detalhado de longo prazo",
+            d: "Equipe especializada e hierarquizada",
+            correct: "b"
+        }
+    ],
+    "Perfis scrum": [
+        {
+            question: "Qual é o principal papel do Product Owner (P.O.) no Scrum?",
+            a: "Desenvolver código de software",
+            b: "Facilitar reuniões diárias",
+            c: "Maximizar o valor do produto", 
+            d: "Gerenciar a equipe de desenvolvimento",
+            correct: "c"
+        },
+        {
+            question: "Quem facilita a equipe Scrum e garante que o processo ágil seja seguido?",
+            a: "Desenvolvedor",
+            b: "Product Owner",
+            c: "Scrum Master", 
+            d: "Stakeholder",
+            correct: "c"
+        },
+        {
+            question: "Quem são os responsáveis por criar incrementos utilizáveis em cada Sprint?",
+            a: "Scrum Master",
+            b: "Product Owner",
+            c: "Desenvolvedores", 
+            d: "Stakeholders",
+            correct: "c"
+        },
+        {
+            question: "Qual é o papel do Scrum Master em relação aos impedimentos?",
+            a: "Garantir que o Product Owner os resolva",
+            b: "Delegar sua solução aos stakeholders",
+            c: "Removê-los para manter o fluxo de trabalho",
+            d: "Evitá-los sem alterar processos",
+            correct: "c"
+        },
+        {
+            question: "Qual o papel dos stakeholders no Scrum?",
+            a: "Participar das reuniões diárias",
+            b: "Decidir quais itens serão desenvolvidos",
+            c: "Fornecer feedback durante o Sprint Review", 
+            d: "Coordenar o time de desenvolvimento",
+            correct: "c"
+        }
+    ],
+    "Sprints": [
+        {
+            question: "O que é o Sprint?",
+            a: "Um ciclo de trabalho fixo onde se cria um incremento utilizável", 
+            b: "Um evento semanal de revisão",
+            c: "Um planejamento futuro",
+            d: "Um conjunto de tarefas técnicas",
+            correct: "a"
+        },
+        {
+            question: "O que define o sucesso de um Sprint?",
+            a: "O número de tarefas completadas",
+            b: "A entrega do Increment que atende à Definition of Done", 
+            c: "A ausência de reuniões durante o ciclo",
+            d: "A conclusão do Sprint Planning",
+            correct: "b"
+        },
+        {
+            question: "O que é Sprint Backlog?",
+            a: "Uma lista de tarefas concluídas",
+            b: "Itens do Product Backlog selecionados para a Sprint atual", 
+            c: "Uma lista de erros encontrados",
+            d: "Um relatório de progresso",
+            correct: "b"
+        },
+        {
+            question: "Qual o foco da Sprint Retrospective?",
+            a: "Revisar o produto com os stakeholders",
+            b: "Avaliar o desempenho da equipe e o processo", 
+            c: "Planejar o próximo Sprint",
+            d: "Definir o Increment",
+            correct: "b"
+        },
+        {
+            question: "O que é definido no Sprint Goal?",
+            a: "As metas para os stakeholders",
+            b: "O objetivo principal que a equipe espera alcançar durante a Sprint", 
+            c: "As tarefas de revisão",
+            d: "O relatório final de progresso",
+            correct: "b"
+        }
+    ]
+};
+
+
 const quiz = document.getElementById("quiz");
 const submitButton = document.getElementById("submit");
 const results = document.getElementById("results");
-let currentQuestion = 0;
-let score = 0;
+
+let currentCategory = Object.keys(quizData)[0];
+let currentQuestionIndex = 0;
+let scoreByCategory = {};
 let selectedAnswer = null;
 let hasAnswered = false;
+let categoria = document.getElementById("Categoria")
+let titulo = document.getElementById("titulo")
+
+Object.keys(quizData).forEach(category => {
+    scoreByCategory[category] = 0;
+});
+
 function loadQuiz() {
-    const currentQuizData = quizData[currentQuestion];
+    const currentQuizData = quizData[currentCategory][currentQuestionIndex];
     hasAnswered = false;
+    categoria.innerHTML = currentCategory
     quiz.innerHTML = `
         <div class="question">${currentQuizData.question}</div>
         <button class="alternative-button" data-answer="a">${currentQuizData.a}</button>
@@ -97,6 +239,7 @@ function loadQuiz() {
         <button class="alternative-button" data-answer="c">${currentQuizData.c}</button>
         <button class="alternative-button" data-answer="d">${currentQuizData.d}</button>
     `;
+
     document.querySelectorAll('.alternative-button').forEach(button => {
         button.addEventListener('click', () => {
             document.querySelectorAll('.alternative-button').forEach(btn => btn.classList.remove('selected'));
@@ -105,57 +248,82 @@ function loadQuiz() {
         });
     });
 }
+
 function highlightAnswers() {
-    const correctAnswer = quizData[currentQuestion].correct;
-    
+    const correctAnswer = quizData[currentCategory][currentQuestionIndex].correct;
+
     document.querySelectorAll('.alternative-button').forEach(button => {
         const answer = button.getAttribute('data-answer');
         if (answer === correctAnswer) {
-            button.classList.add('correct');  
-        }
-        if (answer === selectedAnswer && answer !== correctAnswer) {
+            button.classList.add('correct'); 
+        } else if (answer === selectedAnswer && answer !== correctAnswer) {
             button.classList.add('wrong');  
         }
     });
 }
+
 function showResults() {
+    categoria.style.display = "none"
+    titulo.style.display = "none"
     quiz.innerHTML = '';
-    results.innerHTML = `Você acertou ${score} de ${quizData.length} questões.`;
-    submitButton.style.display = 'none';  
+    results.innerHTML = Object.keys(scoreByCategory)
+        .map(category => `Categoria "${category}": ${scoreByCategory[category]} acertos.`)
+        .join('<br>');
+    submitButton.style.display = 'none';
+
     const restartButton = document.createElement('button');
     restartButton.innerText = 'Reiniciar Quiz';
+    restartButton.style.borderRadius = "10px"
     restartButton.classList.add('restart-button');
     quiz.appendChild(restartButton);
     restartButton.addEventListener('click', restartQuiz);
 }
+
+function nextQuestion() {
+    if (selectedAnswer === quizData[currentCategory][currentQuestionIndex].correct) {
+        scoreByCategory[currentCategory]++;
+    }
+
+    setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex >= quizData[currentCategory].length) {
+            const categories = Object.keys(quizData);
+            const currentIndex = categories.indexOf(currentCategory);
+
+            if (currentIndex + 1 < categories.length) {
+                currentCategory = categories[currentIndex + 1];
+                currentQuestionIndex = 0;
+            } else {
+                showResults();
+                return;
+            }
+        }
+        loadQuiz();
+    }, 1000);
+}
+
 function restartQuiz() {
-    score = 0;
-    currentQuestion = 0;
+    currentCategory = Object.keys(quizData)[0];
+    currentQuestionIndex = 0;
+    Object.keys(scoreByCategory).forEach(category => {
+        scoreByCategory[category] = 0;
+    });
     selectedAnswer = null;
     results.innerHTML = '';
-    submitButton.style.display = 'block';  
-    loadQuiz();  
+    submitButton.style.display = 'block';
+    loadQuiz();
 }
+
 submitButton.addEventListener("click", () => {
     if (!hasAnswered) {
         if (selectedAnswer) {
             highlightAnswers(); 
-            if (selectedAnswer === quizData[currentQuestion].correct) {
-                score++;
-            }
             hasAnswered = true;
-            setTimeout(() => {
-                currentQuestion++;
-                selectedAnswer = null;
-                if (currentQuestion < quizData.length) {
-                    loadQuiz();
-                } else {
-                    showResults();
-                }
-            }, 1000);
+            nextQuestion();
         } else {
             alert("Por favor, selecione uma resposta!");
         }
     }
 });
+
 loadQuiz();
