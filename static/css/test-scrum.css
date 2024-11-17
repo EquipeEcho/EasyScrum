@@ -87,3 +87,37 @@ h1 {
     text-align: center;
     font-weight: bold;
 }
+.form{
+    display: none;
+    text-align: center;
+
+}
+.form input{
+    border: 1px black solid;
+    border-radius: 6px;
+    transition-duration: 500ms;
+    margin-top: 5px;
+}
+.form input:hover{
+    border: 1px rgb(228, 79, 79) solid;
+    background-color: antiquewhite;
+}
+.form input:focus {
+    background-color: #ffffffff;
+    border: #f44336;
+}
+.form button{
+    border: 1px black solid;
+    border-radius: 6px;
+    transition-duration: 500ms;
+    margin-top: 5px;
+}
+.form button:hover{
+    border: 1px rgb(228, 79, 79) solid;
+    background-color: antiquewhite;
+    transition-duration: 500ms;
+}
+.form button:focus {
+    background-color: #ffffffff;
+    border: #f44336;
+}

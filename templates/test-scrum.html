@@ -32,7 +32,9 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Quem Somos</a>
                   </li>
-
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ url_for('mostra') }}">Tabela de Resultados</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -50,34 +52,26 @@
                 <div id="quiz"></div>
                 <button class="btn-enviar" id="submit">Enviar</button>
                 <div id="results"></div>
+                <section id="form" class="form mx-auto">
+                  <p class="m-0"><strong>Enviar Resultados</strong> <i class="bi bi-box-arrow-in-up-right"></i></p>
+                  <form action="{{url_for('insert')}}" method="POST">
+                    <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+                    <input type="text" name="CPF" id="CPF" placeholder="CPF"><br>
+                    <input type="hidden" id="pts-1" name="pts-1" value="0">
+                    <input type="hidden" id="pts-2" name="pts-2" value="0">
+                    <input type="hidden" id="pts-3" name="pts-3" value="0">
+                    <input type="hidden" id="pts-4" name="pts-4" value="0">
+                    <input type="hidden" id="pts-5" name="pts-5" value="0">
+                    <button type="submit" value="submit">Enviar</button>
+                  </form>
+                </section>
             <script src="/static/js/quiz.js"></script>
             <script src="../static/js/quiz.js"></script>
         </section>              
       </div>
-      <section>
-        Bota <i class="bi bi-box-arrow-in-up-right"></i>
-        <form action="{{url_for('insert')}}" method="POST">
-          <input type="text" name="nome" id="nome">
-          <input type="text" name="CPF" id="CPF">
-          <input type="hidden" id="Q" name="Q" value="quizz">
-          <input type="hidden" id="pts" name="pts" value="5">
-          <input type="submit" value="submit">
-        </form>
-      </section>
-      <section>
-        tira <i class="bi bi-box-arrow-up-right"></i>
-        <form action="{{url_for('delete')}}" method="POST">
-          <input type="text" name="nome" id="nome">
-          <input type="text" name="CPF" id="CPF">
-          <input type="hidden" id="Q" name="Q" value="quizz">
-          <input type="hidden" id="pts" name="pts" value="5">
-          <input type="submit" value="submit">
-        </form>
-      </section>
   </main>
 
     <footer class="container-fluid bg-dark fixed-bottom">
-      <a href="{{ url_for('mostra') }}">AAAAAAAAAAAAAAAAAAAAAAAAA</a>
         <section class="row h-10">
             <div class="col-fluid text-center text-white pt-4 pb-4">
                 <span class="align-middle">Site criado pela equipe Echo | Todos os direitos reservados</span>

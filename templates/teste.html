@@ -14,6 +14,12 @@
     <p>Quiz 3 = {{ row['quizzz'] }}</p>
     <p>Quiz 4 = {{ row['quizzzz'] }}</p>
     <p>Quiz 5 = {{ row['quizzzzz'] }}</p>
+    <p>Quiz Total = {{ ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 }}</p>
+    <form action="{{url_for('delete')}}" method="POST">
+      <input type="hidden" name="nome" id="nome" value="{{ row['Nome'] }}">
+      <input type="hidden" name="CPF" id="CPF" value="{{ row['CPF'] }}">
+      <button type="submit" value="submit">Deletar</button>
+    </form>
     {% endfor %}
 </body>
 </html>

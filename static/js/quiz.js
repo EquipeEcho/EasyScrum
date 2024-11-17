@@ -267,9 +267,15 @@ function showResults() {
     titulo.style.display = "none"
     quiz.innerHTML = '';
     results.innerHTML = Object.keys(scoreByCategory)
-        .map(category => `Categoria "${category}": ${scoreByCategory[category]} acertos.`)
+        .map(category => `Categoria <strong>${category}</strong> : ${scoreByCategory[category]} acertos.`)
         .join('<br>');
-    submitButton.style.display = 'none';
+    submitButton.style.display = 'none'; 
+    let numeroId = 1;
+    for (let i = 0; i < 5; i++) { 
+        document.getElementById('pts-'+numeroId).setAttribute('value',scoreByCategory[Object.keys(quizData)[i]]);
+        numeroId++;
+    }
+    document.getElementById('form').style.display = 'initial';
 
     const restartButton = document.createElement('button');
     restartButton.innerText = 'Reiniciar Quiz';
@@ -299,7 +305,7 @@ function nextQuestion() {
             }
         }
         loadQuiz();
-    }, 1000);
+    }, 10);
 }
 
 function restartQuiz() {
