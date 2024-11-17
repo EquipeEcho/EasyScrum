@@ -1,25 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../media/images/LogoEasyScrumfavicon.jpg">
+  <link rel="stylesheet" href=" /static/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+  <title>Easy Scrum</title>
 </head>
-<body>
-    <h1>Ta pegando</h1>
-    {% for row in rows %}
-    <h1>{{ row['Nome'] }}</h1>
-    <p>Quiz 1 = {{ row['quiz'] }}</p>
-    <p>Quiz 2 = {{ row['quizz'] }}</p>
-    <p>Quiz 3 = {{ row['quizzz'] }}</p>
-    <p>Quiz 4 = {{ row['quizzzz'] }}</p>
-    <p>Quiz 5 = {{ row['quizzzzz'] }}</p>
-    <p>Quiz Total = {{ ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 }}</p>
-    <form action="{{url_for('delete')}}" method="POST">
-      <input type="hidden" name="nome" id="nome" value="{{ row['Nome'] }}">
-      <input type="hidden" name="CPF" id="CPF" value="{{ row['CPF'] }}">
-      <button type="submit" value="submit">Deletar</button>
-    </form>
-    {% endfor %}
+
+<body class="  border-0 bd-example border-0">
+  <header class=" w-100 z-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/static/images/LogoEasyScrum copiar.png" id="foto-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/quiz">Teste de Conhecimento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Quem Somos</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid pt-3">
+      <div class="row justify-content-center">
+        <section class="col-md-9 rounded border border-3 border-danger-subtle shadow table-responsive ">
+          <h1>Resultados</h1>
+          <table class="table table-bordered table-hover ">
+            <thead>
+              <td class="text-center"><strong>Nome</strong></td>
+              <td class="text-center"><strong>Quiz 1</strong></td>
+              <td class="text-center"><strong>Quiz 2</strong></td>
+              <td class="text-center"><strong>Quiz 3</strong></td>
+              <td class="text-center"><strong>Quiz 4</strong></td>
+              <td class="text-center"><strong>Quiz 5</strong></td>
+              <td class="text-center"><strong>Total</strong></td>
+            </thead>
+            {% for row in rows %}
+            <tr class="table-danger">
+              <td class="text-center text-truncate ">{{ row['Nome'] }}</td>
+              <td class="text-center">{{ row['quiz'] }}</td>
+              <td class="text-center">{{ row['quizz'] }}</td>
+              <td class="text-center">{{ row['quizzz'] }}</td>
+              <td class="text-center">{{ row['quizzzz'] }}</td>
+              <td class="text-center">{{ row['quizzzzz'] }}</td>
+              <td class="text-center">Quiz Total = {{
+                ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 }}</td>
+            </tr>
+            {% endfor %}
+          </table>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="container-fluid bg-dark fixed-bottom">
+    <section class="row h-10">
+      <div class="col-fluid text-center text-white pt-4 pb-4">
+        <span class="align-middle">Site criado pela equipe Echo | Todos os direitos reservados</span>
+      </div>
+    </section>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
+
+
+
 </html>
