@@ -3,6 +3,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
 }
 
 #foto-logo {
@@ -120,4 +123,9 @@ h1 {
 .form button:focus {
     background-color: #ffffffff;
     border: #f44336;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
 }

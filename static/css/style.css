@@ -1,6 +1,11 @@
 .teste_container{
     padding: 0;
 }
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+}
 
 h2 {
     text-align: center;
@@ -31,5 +36,9 @@ audio::-webkit-media-controls-panel{
 audio::-webkit-media-controls-current-time-display, ::-webkit-media-controls-time-remaining-display{
     color: white;
 }
-
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+}
 
