@@ -223,6 +223,7 @@ let selectedAnswer = null;
 let hasAnswered = false;
 let categoria = document.getElementById("Categoria")
 let titulo = document.getElementById("titulo")
+let numero = 1
 
 Object.keys(quizData).forEach(category => {
     scoreByCategory[category] = 0;
@@ -233,7 +234,7 @@ function loadQuiz() {
     hasAnswered = false;
     categoria.innerHTML = currentCategory
     quiz.innerHTML = `
-        <div class="question">${currentQuizData.question}</div>
+        <div class="question">${numero}/25 ${currentQuizData.question}</div>
         <button class="alternative-button" data-answer="a">${currentQuizData.a}</button>
         <button class="alternative-button" data-answer="b">${currentQuizData.b}</button>
         <button class="alternative-button" data-answer="c">${currentQuizData.c}</button>
@@ -286,6 +287,7 @@ function showResults() {
 }
 
 function nextQuestion() {
+    numero++
     if (selectedAnswer === quizData[currentCategory][currentQuestionIndex].correct) {
         scoreByCategory[currentCategory]++;
     }
@@ -305,7 +307,7 @@ function nextQuestion() {
             }
         }
         loadQuiz();
-    }, 10);
+    }, 1000);
 }
 
 function restartQuiz() {
