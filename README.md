@@ -6,6 +6,7 @@ Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividad
 * [Objetivo do Projeto](#objetivo-do-projeto)
 * [Funcionalidades e registros da Sprint](#Funcionalidades-e-registros-(vídeos-e-apresentações)-das-sprints)
 * [Backlog do produto](#Backlog-do-produto)
+* [Instruções para usar o site](#Instruções-para-usar-o-site)
 * [Competências desenvolvidas](#competências-desenvolvidas)
 * [Autores](#autores)
 
@@ -19,7 +20,7 @@ Sprint | Previsão | Status|
 |<p style="text-align">Kick Off |<p style="text-align"> 02/09 - 06/09 | <p style="text-align"> Concluido |
 |<p style="text-align">Sprint 1 |<p style="text-align"> 09/09 - 29/09 |<p style="text-align"> Concluída |
 |<p style="text-align">Sprint 2|<p style="text-align">07/10 - 27/10|<p style="text-align">Concluída |
-|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Não inciada|
+|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Em andamento|
 |<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Produto em andamento |
 
 # Objetivo do Projeto
@@ -38,12 +39,18 @@ Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do and
 
 ## Tecnologias Utilizadas
 
-* Jira Software
-* Notion
-* Discord
-* VSCode
-* HTML
-* CSS
+ ![Jira Software](https://img.shields.io/badge/Jira-fdfefe?style=for-the-badge&logo=jira&logoColor=0064c8)
+ ![Notion](https://img.shields.io/badge/Notion-fdfefe?style=for-the-badge&logo=notion&logoColor=000000)
+ ![Discord](https://img.shields.io/badge/Discord-fdfefe?style=for-the-badge&logo=discord)
+ ![Python](https://img.shields.io/badge/Python-fdfefe?style=for-the-badge&logo=python)
+ ![Flask](https://img.shields.io/badge/Flask-fdfefe?style=for-the-badge&logo=flask&logoColor=000000)
+ ![Bootstrap](https://img.shields.io/badge/Bootstrap-fdfefe?style=for-the-badge&logo=bootstrap)
+ ![HTML](https://img.shields.io/badge/HTML-fdfefe?style=for-the-badge&logo=html5)
+ ![CSS](https://img.shields.io/badge/CSS-fdfefe?style=for-the-badge&logo=css3&logoColor=ff8a27)
+ ![JavaScript](https://img.shields.io/badge/JavaScript-fdfefe?style=for-the-badge&logo=javascript)
+ ![Markdown](https://img.shields.io/badge/Markdown-fdfefe?style=for-the-badge&logo=markdown&logoColor=2e4053)
+ ![Github](https://img.shields.io/badge/Github-fdfefe?style=for-the-badge&logo=github&logoColor=000000)
+ ![VisualStudioCode](https://img.shields.io/badge/VsCode-fdfefe?style=for-the-badge&logo=visualstudiocode)
 
 # Backlog do produto
 
@@ -56,7 +63,17 @@ Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do and
 | V | 2 | Alta | Os funcionários precisam saber como acessar o Easy Scrum, para utilizar de forma correta e poder aplicar o método. (Manual de usuário) Maria faz parte da equipe de treinamento dos novos funcionários, ela já conhece o método, mas quer se aprofundar nos tópicos do Scrum. Necessita ver detalhes do assunto, para que com isso possa sanar duvidas dos novos contratados. (caixas de conteúdo) | 5 |
 | VI | 2 | Alta | Como usuário  tendo contato inicial com o Easy Scrum, preciso de uma home mais organizada, para poder aprender melhor sobre o método e aplicar com minha equipe. (estilização da home) | 8 |
 | VII | 3 | Alta | Como cliente, quero ter o produto finalizado e funcionando, para poder testar o conhecimento dos meus funcionários e  já aplicar o método Scrum. (testar o site) | 5 |
-| VIII | 3 | Alta |  Os funcionários precisam saber como acessar o Easy Scrum, para utilizar de forma correta e poder aplicar o método. | 8 |  
+| IX | 3 | Média|   Os usuarios externos que irão acessar o Easy Scrum precisam saber sobre o cliente para poder entender melhor o objetivo do site. (Pagina Quem Somos) | 8 |
+| X | 3 | Média |  O cliente Fatec precisa de visualizar o desempenho de todos os seus funcionários para sanar as dúvidas e gerenciar melhor seus funcionários.  (Banco de dados)  | 13 |  
+
+
+# Instruções para usar o site
+Acesse o manual do usuário do Easy Scrum no link abaixo para ver o passo a passo e ter o site funcionando em seu computador
+
+<p style="text-align"><a href="https://www.canva.com/design/DAGW9JL4MYk/dxEG7o5BQsFiZVmM2YLvQg/edit?utm_content=DAGW9JL4MYk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+Manual do Usuário
+<a></p>
+
 
 # Competências desenvolvidas
 
