@@ -279,6 +279,7 @@ function showResults() {
     document.getElementById('form').style.display = 'initial';
 
     const restartButton = document.createElement('button');
+    restartButton.classList.add("restart");
     restartButton.innerText = 'Reiniciar Quiz';
     restartButton.style.borderRadius = "10px"
     restartButton.classList.add('restart-button');
@@ -375,7 +376,6 @@ function calcularCPF(cpfmod) {
 
     if (primeiroDigito == cpfmod[9]) {
         soma = 0;
-        primeiroDigito = 0;
 
         for (let i = 0; i < 10; i++) {
             soma += cpfmod[i] * (11 - i); 
@@ -390,13 +390,19 @@ function calcularCPF(cpfmod) {
         if (primeiroDigito == cpfmod[10]) {
             console.log("CPF VALIDADO COM SUCESSO");
             msg.innerText = "CPF VÁLIDO";
+            msg.style.color = "green";
+            cpf.style.boxShadow = "0px 0px 5px 5px green, 0px 0px 5px 3px green";
         } else {
             console.log("CPF INVÁLIDO");
             msg.innerText = "CPF INVÁLIDO";
+            msg.style.color = "red";
+            cpf.style.boxShadow = "0px 0px 5px 5px red, 0px 0px 5px 3px red";
         }
     } else {
         console.log("CPF INVÁLIDO");
         msg.innerText = "CPF INVÁLIDO";
+        msg.style.color = "red";
+        cpf.style.boxShadow = "0px 0px 5px 5px red, 0px 0px 5px 3px red";
     }
 }
 

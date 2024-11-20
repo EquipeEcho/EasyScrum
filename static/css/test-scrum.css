@@ -129,3 +129,11 @@ footer{
     bottom: 0;
     height: 80px;
 }
+
+#msg{
+    text-align: start;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
