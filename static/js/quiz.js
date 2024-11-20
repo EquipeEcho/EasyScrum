@@ -319,6 +319,8 @@ function restartQuiz() {
     });
     selectedAnswer = null;
     results.innerHTML = '';
+    numero = 0;
+    document.getElementById('form').style.display = 'none';
     submitButton.style.display = 'block';
     loadQuiz();
 }
