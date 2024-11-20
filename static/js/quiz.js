@@ -319,7 +319,7 @@ function restartQuiz() {
     });
     selectedAnswer = null;
     results.innerHTML = '';
-    numero = 0;
+    numero = 1;
     document.getElementById('form').style.display = 'none';
     submitButton.style.display = 'block';
     loadQuiz();
