@@ -330,6 +330,7 @@ submitButton.addEventListener("click", () => {
         if (selectedAnswer) {
             highlightAnswers(); 
             hasAnswered = true;
+            selectedAnswer = null;
             nextQuestion();
         } else {
             alert("Por favor, selecione uma resposta!");
