@@ -1,5 +1,6 @@
 from flask import Flask,render_template,url_for,request
 from PIL import Image, ImageDraw
+from datetime import datetime
 import sqlite3
 
 app = Flask(__name__)   
@@ -81,6 +82,11 @@ def certificado():
     text_color = (0, 0, 0)
     font_size = 100
     d.text(location, nome, fill=text_color, font_size=font_size)
+    current_date = datetime.now()
+    date_string = current_date.strftime("%d/%m/%Y")
+    date_location = (1500, 1100)
+    font_size = 50
+    d.text(date_location, date_string, fill=text_color, font_size=font_size)
     cert = "./static/generated/" + user['Nome'] + ".png"
     img.save(cert)
     cur.close()
