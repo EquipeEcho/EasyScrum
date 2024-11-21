@@ -1,4 +1,5 @@
 from flask import Flask,render_template,url_for,request
+from PIL import Image, ImageDraw
 import sqlite3
 
 app = Flask(__name__)   
@@ -61,3 +62,26 @@ def mostra():
     rows = cur.fetchall()
     cur.close()
     return render_template('teste.html', rows = rows)
+
+@app.route('/certificado', methods=['POST'])
+def certificado():
+    nome = request.form['nome']
+    if not nome:
+        return mostra()
+    conn = sqlite3.connect('database.db')
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM users WHERE Nome = ?", (nome,))
+    user = cur.fetchone()
+    if user == None:
+        return mostra()
+    img = Image.open("./static/images/cert.png")
+    d = ImageDraw.Draw(img)
+    location = (425, 695)
+    text_color = (0, 0, 0)
+    font_size = 100
+    d.text(location, nome, fill=text_color, font_size=font_size)
+    cert = "./static/generated/" + user['Nome'] + ".png"
+    img.save(cert)
+    cur.close()
+    return render_template('certificado.html', cert = cert)
