@@ -53,6 +53,7 @@
               <td class="text-center"><strong>Quiz 4</strong></td>
               <td class="text-center"><strong>Quiz 5</strong></td>
               <td class="text-center"><strong>Total</strong></td>
+              <td class="text-center"><strong>Certificado</strong></td>
             </thead>
             {% for row in rows %}
             <tr class="table-danger">
@@ -62,7 +63,7 @@
               <td class="text-center">{{ row['quizzz'] }}</td>
               <td class="text-center">{{ row['quizzzz'] }}</td>
               <td class="text-center">{{ row['quizzzzz'] }}</td>
-              <td class="text-center">Quiz Total = {{
+              <td class="text-center">{{
                 ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 }}</td>
               <td>{% if ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 > 60 %}
                 <form action="{{ url_for('certificado') }}" class="text-center" method="POST">
