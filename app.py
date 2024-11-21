@@ -66,16 +66,8 @@ def mostra():
 
 @app.route('/certificado', methods=['POST'])
 def certificado():
+    cpf = request.form['cpf']
     nome = request.form['nome']
-    if not nome:
-        return mostra()
-    conn = sqlite3.connect('database.db')
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM users WHERE Nome = ?", (nome,))
-    user = cur.fetchone()
-    if user == None:
-        return mostra()
     img = Image.open("./static/images/cert.png")
     d = ImageDraw.Draw(img)
     location = (425, 695)
@@ -87,7 +79,6 @@ def certificado():
     date_location = (1500, 1100)
     font_size = 50
     d.text(date_location, date_string, fill=text_color, font_size=font_size)
-    cert = "./static/generated/" + user['Nome'] + ".png"
+    cert = "./static/generated/" + nome + ".png"
     img.save(cert)
-    cur.close()
     return render_template('certificado.html', cert = cert)

@@ -64,17 +64,18 @@
               <td class="text-center">{{ row['quizzzzz'] }}</td>
               <td class="text-center">Quiz Total = {{
                 ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 }}</td>
+              <td>{% if ((row['quiz']+row['quizz']+row['quizzz']+row['quizzzz']+row['quizzzzz'])*100)/25 > 60 %}
+                <form action="{{ url_for('certificado') }}" class="text-center" method="POST">
+                  <input type="hidden" id="cpf" name="cpf" value="{{ row['CPF'] }}">
+                  <input type="hidden" id="nome" name="nome" value="{{ row['Nome'] }}">
+                  <button type="submit" class="butao"> certificado </button>
+                </form>
+                {% endif %}
+              </td>
             </tr>
             {% endfor %}
           </table>
         </section>
-        <div class="row justify-content-center text-center mt-3">
-          <form action="{{url_for('certificado')}}" method="POST" class="d-flex flex-column align-items-center">
-            <label for="nome" class="fw-bold">Baixe seu certificado!</label>
-            <input class="form-control focus-ring border border-3 border-danger-subtle w-25" type="text" id="nome" name="nome">
-            <button class="btn btn-cert mt-2" type="submit">Gerar</button>
-          </form>
-        </div>
       </div>
     </div>
     <footer class="container-fluid bg-dark">
