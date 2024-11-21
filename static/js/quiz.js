@@ -41,174 +41,174 @@ const quizData = {
             correct: "b"
         }
      ],
-    "Como aplicar o scrum": [
-        {
-            question: "Qual evento Scrum inicia o planejamento da Sprint?",
-            a: "Sprint Review",
-            b: "Sprint Planning", 
-            c: "Daily Scrum",
-            d: "Sprint Retrospective",
-            correct: "b"
-        },
-        {
-            question: "O que deve ser feito diariamente para alinhar o progresso?",
-            a: "Sprint Review",
-            b: "Sprint Planning",
-            c: "Daily Scrum", 
-            d: "Sprint Retrospective",
-            correct: "c"
-        },
-        {
-            question: "Durante qual evento os itens do backlog são detalhados e priorizados?",
-            a: "Backlog Refinement", 
-            b: "Sprint Review",
-            c: "Daily Scrum",
-            d: "Sprint Retrospective",
-            correct: "a"
-        },
-        {
-            question: "Qual é o principal objetivo da Sprint Review?",
-            a: "Revisar o trabalho concluído com os stakeholders", 
-            b: "Identificar melhorias no processo",
-            c: "Alinhar metas diárias da equipe",
-            d: "Planejar o próximo Sprint",
-            correct: "a"
-        },
-        {
-            question: "Qual é o papel do Sprint Goal?",
-            a: "Determinar a quantidade de trabalho realizado",
-            b: "Orientar o objetivo do time durante a Sprint", 
-            c: "Listar tarefas individuais",
-            d: "Garantir o prazo final do projeto",
-            correct: "b"
-        }
-    ],
-    "Vantagens do scrum": [
-        {
-            question: "Qual vantagem o Scrum oferece às equipes?",
-            a: "Ritmo de trabalho insustentável",
-            b: "Melhoria contínua", 
-            c: "Redução do tempo de planejamento",
-            d: "Trabalho individual mais eficiente",
-            correct: "b"
-        },
-        {
-            question: "Como o Scrum mantém a motivação da equipe?",
-            a: "Ao definir prazos rigorosos",
-            b: "Ao promover autonomia e auto-organização", 
-            c: "Ao eliminar reuniões",
-            d: "Ao centralizar decisões no Product Owner",
-            correct: "b"
-        },
-        {
-            question: "Qual benefício é resultado da remoção de impedimentos no Scrum?",
-            a: "Processo mais eficiente", 
-            b: "Menos revisões necessárias",
-            c: "Menor participação dos stakeholders",
-            d: "Maior dependência de liderança",
-            correct: "a"
-        },
-        {
-            question: "Por que o Scrum é considerado flexível?",
-            a: "Permite mudanças frequentes para melhor alinhamento com o objetivo", 
-            b: "Dispensa o uso de artefatos",
-            c: "Não requer reuniões regulares",
-            d: "Exige documentação detalhada",
-            correct: "a"
-        },
-        {
-            question: "Qual fator do Scrum facilita o desenvolvimento ágil?",
-            a: "Uso obrigatório de ferramentas específicas",
-            b: "Incrementos pequenos e frequentes", 
-            c: "Planejamento detalhado de longo prazo",
-            d: "Equipe especializada e hierarquizada",
-            correct: "b"
-        }
-    ],
-    "Perfis scrum": [
-        {
-            question: "Qual é o principal papel do Product Owner (P.O.) no Scrum?",
-            a: "Desenvolver código de software",
-            b: "Facilitar reuniões diárias",
-            c: "Maximizar o valor do produto", 
-            d: "Gerenciar a equipe de desenvolvimento",
-            correct: "c"
-        },
-        {
-            question: "Quem facilita a equipe Scrum e garante que o processo ágil seja seguido?",
-            a: "Desenvolvedor",
-            b: "Product Owner",
-            c: "Scrum Master", 
-            d: "Stakeholder",
-            correct: "c"
-        },
-        {
-            question: "Quem são os responsáveis por criar incrementos utilizáveis em cada Sprint?",
-            a: "Scrum Master",
-            b: "Product Owner",
-            c: "Desenvolvedores", 
-            d: "Stakeholders",
-            correct: "c"
-        },
-        {
-            question: "Qual é o papel do Scrum Master em relação aos impedimentos?",
-            a: "Garantir que o Product Owner os resolva",
-            b: "Delegar sua solução aos stakeholders",
-            c: "Removê-los para manter o fluxo de trabalho",
-            d: "Evitá-los sem alterar processos",
-            correct: "c"
-        },
-        {
-            question: "Qual o papel dos stakeholders no Scrum?",
-            a: "Participar das reuniões diárias",
-            b: "Decidir quais itens serão desenvolvidos",
-            c: "Fornecer feedback durante o Sprint Review", 
-            d: "Coordenar o time de desenvolvimento",
-            correct: "c"
-        }
-    ],
-    "Sprints": [
-        {
-            question: "O que é o Sprint?",
-            a: "Um ciclo de trabalho fixo onde se cria um incremento utilizável", 
-            b: "Um evento semanal de revisão",
-            c: "Um planejamento futuro",
-            d: "Um conjunto de tarefas técnicas",
-            correct: "a"
-        },
-        {
-            question: "O que define o sucesso de um Sprint?",
-            a: "O número de tarefas completadas",
-            b: "A entrega do Increment que atende à Definition of Done", 
-            c: "A ausência de reuniões durante o ciclo",
-            d: "A conclusão do Sprint Planning",
-            correct: "b"
-        },
-        {
-            question: "O que é Sprint Backlog?",
-            a: "Uma lista de tarefas concluídas",
-            b: "Itens do Product Backlog selecionados para a Sprint atual", 
-            c: "Uma lista de erros encontrados",
-            d: "Um relatório de progresso",
-            correct: "b"
-        },
-        {
-            question: "Qual o foco da Sprint Retrospective?",
-            a: "Revisar o produto com os stakeholders",
-            b: "Avaliar o desempenho da equipe e o processo", 
-            c: "Planejar o próximo Sprint",
-            d: "Definir o Increment",
-            correct: "b"
-        },
-        {
-            question: "O que é definido no Sprint Goal?",
-            a: "As metas para os stakeholders",
-             b: "O objetivo principal que a equipe espera alcançar durante a Sprint", 
-             c: "As tarefas de revisão",
-             d: "O relatório final de progresso",
-             correct: "b"
-         }
-     ]
+    // "Como aplicar o scrum": [
+    //     {
+    //         question: "Qual evento Scrum inicia o planejamento da Sprint?",
+    //         a: "Sprint Review",
+    //         b: "Sprint Planning", 
+    //         c: "Daily Scrum",
+    //         d: "Sprint Retrospective",
+    //         correct: "b"
+    //     },
+    //     {
+    //         question: "O que deve ser feito diariamente para alinhar o progresso?",
+    //         a: "Sprint Review",
+    //         b: "Sprint Planning",
+    //         c: "Daily Scrum", 
+    //         d: "Sprint Retrospective",
+    //         correct: "c"
+    //     },
+    //     {
+    //         question: "Durante qual evento os itens do backlog são detalhados e priorizados?",
+    //         a: "Backlog Refinement", 
+    //         b: "Sprint Review",
+    //         c: "Daily Scrum",
+    //         d: "Sprint Retrospective",
+    //         correct: "a"
+    //     },
+    //     {
+    //         question: "Qual é o principal objetivo da Sprint Review?",
+    //         a: "Revisar o trabalho concluído com os stakeholders", 
+    //         b: "Identificar melhorias no processo",
+    //         c: "Alinhar metas diárias da equipe",
+    //         d: "Planejar o próximo Sprint",
+    //         correct: "a"
+    //     },
+    //     {
+    //         question: "Qual é o papel do Sprint Goal?",
+    //         a: "Determinar a quantidade de trabalho realizado",
+    //         b: "Orientar o objetivo do time durante a Sprint", 
+    //         c: "Listar tarefas individuais",
+    //         d: "Garantir o prazo final do projeto",
+    //         correct: "b"
+    //     }
+    // ],
+    // "Vantagens do scrum": [
+    //     {
+    //         question: "Qual vantagem o Scrum oferece às equipes?",
+    //         a: "Ritmo de trabalho insustentável",
+    //         b: "Melhoria contínua", 
+    //         c: "Redução do tempo de planejamento",
+    //         d: "Trabalho individual mais eficiente",
+    //         correct: "b"
+    //     },
+    //     {
+    //         question: "Como o Scrum mantém a motivação da equipe?",
+    //         a: "Ao definir prazos rigorosos",
+    //         b: "Ao promover autonomia e auto-organização", 
+    //         c: "Ao eliminar reuniões",
+    //         d: "Ao centralizar decisões no Product Owner",
+    //         correct: "b"
+    //     },
+    //     {
+    //         question: "Qual benefício é resultado da remoção de impedimentos no Scrum?",
+    //         a: "Processo mais eficiente", 
+    //         b: "Menos revisões necessárias",
+    //         c: "Menor participação dos stakeholders",
+    //         d: "Maior dependência de liderança",
+    //         correct: "a"
+    //     },
+    //     {
+    //         question: "Por que o Scrum é considerado flexível?",
+    //         a: "Permite mudanças frequentes para melhor alinhamento com o objetivo", 
+    //         b: "Dispensa o uso de artefatos",
+    //         c: "Não requer reuniões regulares",
+    //         d: "Exige documentação detalhada",
+    //         correct: "a"
+    //     },
+    //     {
+    //         question: "Qual fator do Scrum facilita o desenvolvimento ágil?",
+    //         a: "Uso obrigatório de ferramentas específicas",
+    //         b: "Incrementos pequenos e frequentes", 
+    //         c: "Planejamento detalhado de longo prazo",
+    //         d: "Equipe especializada e hierarquizada",
+    //         correct: "b"
+    //     }
+    // ],
+    // "Perfis scrum": [
+    //     {
+    //         question: "Qual é o principal papel do Product Owner (P.O.) no Scrum?",
+    //         a: "Desenvolver código de software",
+    //         b: "Facilitar reuniões diárias",
+    //         c: "Maximizar o valor do produto", 
+    //         d: "Gerenciar a equipe de desenvolvimento",
+    //         correct: "c"
+    //     },
+    //     {
+    //         question: "Quem facilita a equipe Scrum e garante que o processo ágil seja seguido?",
+    //         a: "Desenvolvedor",
+    //         b: "Product Owner",
+    //         c: "Scrum Master", 
+    //         d: "Stakeholder",
+    //         correct: "c"
+    //     },
+    //     {
+    //         question: "Quem são os responsáveis por criar incrementos utilizáveis em cada Sprint?",
+    //         a: "Scrum Master",
+    //         b: "Product Owner",
+    //         c: "Desenvolvedores", 
+    //         d: "Stakeholders",
+    //         correct: "c"
+    //     },
+    //     {
+    //         question: "Qual é o papel do Scrum Master em relação aos impedimentos?",
+    //         a: "Garantir que o Product Owner os resolva",
+    //         b: "Delegar sua solução aos stakeholders",
+    //         c: "Removê-los para manter o fluxo de trabalho",
+    //         d: "Evitá-los sem alterar processos",
+    //         correct: "c"
+    //     },
+    //     {
+    //         question: "Qual o papel dos stakeholders no Scrum?",
+    //         a: "Participar das reuniões diárias",
+    //         b: "Decidir quais itens serão desenvolvidos",
+    //         c: "Fornecer feedback durante o Sprint Review", 
+    //         d: "Coordenar o time de desenvolvimento",
+    //         correct: "c"
+    //     }
+    // ],
+    // "Sprints": [
+    //     {
+    //         question: "O que é o Sprint?",
+    //         a: "Um ciclo de trabalho fixo onde se cria um incremento utilizável", 
+    //         b: "Um evento semanal de revisão",
+    //         c: "Um planejamento futuro",
+    //         d: "Um conjunto de tarefas técnicas",
+    //         correct: "a"
+    //     },
+    //     {
+    //         question: "O que define o sucesso de um Sprint?",
+    //         a: "O número de tarefas completadas",
+    //         b: "A entrega do Increment que atende à Definition of Done", 
+    //         c: "A ausência de reuniões durante o ciclo",
+    //         d: "A conclusão do Sprint Planning",
+    //         correct: "b"
+    //     },
+    //     {
+    //         question: "O que é Sprint Backlog?",
+    //         a: "Uma lista de tarefas concluídas",
+    //         b: "Itens do Product Backlog selecionados para a Sprint atual", 
+    //         c: "Uma lista de erros encontrados",
+    //         d: "Um relatório de progresso",
+    //         correct: "b"
+    //     },
+    //     {
+    //         question: "Qual o foco da Sprint Retrospective?",
+    //         a: "Revisar o produto com os stakeholders",
+    //         b: "Avaliar o desempenho da equipe e o processo", 
+    //         c: "Planejar o próximo Sprint",
+    //         d: "Definir o Increment",
+    //         correct: "b"
+    //     },
+    //     {
+    //         question: "O que é definido no Sprint Goal?",
+    //         a: "As metas para os stakeholders",
+    //          b: "O objetivo principal que a equipe espera alcançar durante a Sprint", 
+    //          c: "As tarefas de revisão",
+    //          d: "O relatório final de progresso",
+    //          correct: "b"
+    //      }
+    //  ]
 };
 
 
@@ -216,6 +216,7 @@ const quiz = document.getElementById("quiz");
 const submitButton = document.getElementById("submit");
 const results = document.getElementById("results");
 
+const cpfInvalido = ['00000000000', '11111111111', '22222222222', '33333333333', '44444444444', '55555555555', '66666666666', '77777777777', '88888888888', '99999999999'];
 let currentCategory = Object.keys(quizData)[0];
 let currentQuestionIndex = 0;
 let scoreByCategory = {};
@@ -347,7 +348,6 @@ let enviar = document.getElementById("env")
 
 cpf.addEventListener("input", () => {
     let cpfmod = cpf.value.replace(/\D/g, ""); 
-
     if (cpfmod.length === 0) {
         msg.innerText = ""; 
     }
@@ -363,23 +363,31 @@ cpf.addEventListener("input", () => {
     }
 
     if (cpfmod.length === 11) {
+        console.log(cpfmod);
         calcularCPF(cpfmod);
     }
 });
 
 function calcularCPF(cpfmod) {
     let soma = 0;
+    let cpfInvalidoString = '' + cpfmod;
+    let cpfValido = 0;
 
+    for (let i = 0;i < 10;i++){
+        if (cpfInvalidoString == cpfInvalido[i]){
+            cpfValido = 1;
+        }
+    }
+    console.log(cpfInvalidoString === cpfInvalido[1])
     for (let i = 0; i < 9; i++) {
         soma += cpfmod[i] * (10 - i); 
     }
-
     let primeiroDigito = (soma * 10) % 11;
     if (primeiroDigito === 10) {
         primeiroDigito = 0; 
     }
 
-    if (primeiroDigito == cpfmod[9]) {
+    if (primeiroDigito == cpfmod[9] && cpfValido == 0) {
         soma = 0;
 
         for (let i = 0; i < 10; i++) {
@@ -391,7 +399,6 @@ function calcularCPF(cpfmod) {
         if (primeiroDigito === 10) {
             primeiroDigito = 0; 
         }
-
         if (primeiroDigito == cpfmod[10]) {
             console.log("CPF VALIDADO COM SUCESSO");
             msg.innerText = "CPF VÁLIDO";

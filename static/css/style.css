@@ -39,7 +39,6 @@ audio::-webkit-media-controls-current-time-display, ::-webkit-media-controls-tim
 footer{
     position: absolute;
     bottom: 0;
-    height: 80px;
 }
 
 button.btn-cert:hover {
