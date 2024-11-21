@@ -216,7 +216,6 @@ const quiz = document.getElementById("quiz");
 const submitButton = document.getElementById("submit");
 const results = document.getElementById("results");
 
-const cpfInvalido = ['00000000000', '11111111111', '22222222222', '33333333333', '44444444444', '55555555555', '66666666666', '77777777777', '88888888888', '99999999999'];
 let currentCategory = Object.keys(quizData)[0];
 let currentQuestionIndex = 0;
 let scoreByCategory = {};
@@ -332,8 +331,8 @@ submitButton.addEventListener("click", () => {
         if (selectedAnswer) {
             highlightAnswers(); 
             hasAnswered = true;
-            selectedAnswer = null;
             nextQuestion();
+            selectedAnswer = null;
         } else {
             alert("Por favor, selecione uma resposta!");
         }
@@ -347,7 +346,8 @@ let msg = document.getElementById("msg");
 let enviar = document.getElementById("env")
 
 cpf.addEventListener("input", () => {
-    let cpfmod = cpf.value.replace(/\D/g, ""); 
+    let cpfmod = cpf.value.replace(/\D/g, "");
+
     if (cpfmod.length === 0) {
         msg.innerText = ""; 
     }
@@ -363,31 +363,25 @@ cpf.addEventListener("input", () => {
     }
 
     if (cpfmod.length === 11) {
-        console.log(cpfmod);
         calcularCPF(cpfmod);
     }
 });
 
 function calcularCPF(cpfmod) {
     let soma = 0;
-    let cpfInvalidoString = '' + cpfmod;
-    let cpfValido = 0;
 
-    for (let i = 0;i < 10;i++){
-        if (cpfInvalidoString == cpfInvalido[i]){
-            cpfValido = 1;
-        }
-    }
-    console.log(cpfInvalidoString === cpfInvalido[1])
     for (let i = 0; i < 9; i++) {
         soma += cpfmod[i] * (10 - i); 
     }
+
     let primeiroDigito = (soma * 10) % 11;
     if (primeiroDigito === 10) {
         primeiroDigito = 0; 
     }
 
-    if (primeiroDigito == cpfmod[9] && cpfValido == 0) {
+    let validarcpf = validar(cpfmod);
+
+    if (primeiroDigito == cpfmod[9]) {
         soma = 0;
 
         for (let i = 0; i < 10; i++) {
@@ -399,6 +393,7 @@ function calcularCPF(cpfmod) {
         if (primeiroDigito === 10) {
             primeiroDigito = 0; 
         }
+
         if (primeiroDigito == cpfmod[10]) {
             console.log("CPF VALIDADO COM SUCESSO");
             msg.innerText = "CPF VÁLIDO";
@@ -421,5 +416,3 @@ function calcularCPF(cpfmod) {
         enviar.style.display = 'none';
     }
 }
-
-
