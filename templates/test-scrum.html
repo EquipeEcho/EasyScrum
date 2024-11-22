@@ -54,7 +54,7 @@
                 <div id="results"></div>
                 <section id="form" class="form mx-auto">
                   <p class="m-0"><strong>Enviar Resultados</strong> <i class="bi bi-box-arrow-in-up-right"></i></p>
-                  <form action="{{url_for('insert')}}" method="POST">
+                  <form action="{{url_for('insert')}}" id="Form" method="POST">
                     <input type="text" name="nome" id="nome" placeholder="Nome"><br>
                     <input type="text" name="CPF" id="CPF" placeholder="CPF" maxlength="14"><br>
                     <label for="CPF" id="msg"></label><br>
@@ -76,10 +76,8 @@
                 <span class="align-middle">Site criado pela equipe Echo | Todos os direitos reservados</span>
             </div>
         </section>
-        
     </footer>
   </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
 </body>
 </html>

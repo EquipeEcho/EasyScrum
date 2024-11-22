@@ -422,4 +422,9 @@ function calcularCPF(cpfmod) {
     }
 }
 
-
+const tecla = document.getElementById("Form") 
+tecla.addEventListener('keydown', function(enter) {
+    if (enter.key === "Enter") {
+        enter.preventDefault();
+    }
+});
