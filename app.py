@@ -82,3 +82,7 @@ def certificado():
     cert = "./static/generated/" + nome + ".png"
     img.save(cert)
     return render_template('certificado.html', cert = cert)
+
+@app.route('/quemsomos')
+def quemsomos():
+    return render_template ('/quemsomos.html')

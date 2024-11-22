@@ -51,3 +51,25 @@ button.btn-cert:hover {
     border: 1px solid black;
     border-radius: 12px;
 }
+.texto{
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+   
+    text-align: justify;
+    color: #262626;
+    
+}
+.texto2{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 40px;
+    color: #131313;
+    text-align: center;
+}
+.texto-final{
+    font-size: 19px;
+
+}
+.img-quemsomos{
+    margin: 25% 0 0 0 ;
+
+}
