@@ -202,7 +202,7 @@ const quizData = {
         },
         {
             question: "O que é definido no Sprint Goal?",
-            a: "As metas para os stakeholders",
+             a: "As metas para os stakeholders",
              b: "O objetivo principal que a equipe espera alcançar durante a Sprint", 
              c: "As tarefas de revisão",
              d: "O relatório final de progresso",
@@ -216,14 +216,15 @@ const quiz = document.getElementById("quiz");
 const submitButton = document.getElementById("submit");
 const results = document.getElementById("results");
 
+const cpfInvalido = ['00000000000', '11111111111', '22222222222', '33333333333', '44444444444', '55555555555', '66666666666', '77777777777', '88888888888', '99999999999'];
 let currentCategory = Object.keys(quizData)[0];
 let currentQuestionIndex = 0;
 let scoreByCategory = {};
 let selectedAnswer = null;
 let hasAnswered = false;
-let categoria = document.getElementById("Categoria")
-let titulo = document.getElementById("titulo")
-let numero = 1
+let categoria = document.getElementById("Categoria");
+let titulo = document.getElementById("titulo");
+let numero = 1;
 
 Object.keys(quizData).forEach(category => {
     scoreByCategory[category] = 0;
@@ -232,7 +233,7 @@ Object.keys(quizData).forEach(category => {
 function loadQuiz() {
     const currentQuizData = quizData[currentCategory][currentQuestionIndex];
     hasAnswered = false;
-    categoria.innerHTML = currentCategory
+    categoria.innerHTML = currentCategory;
     quiz.innerHTML = `
         <div class="question">${numero}/25 ${currentQuizData.question}</div>
         <button class="alternative-button" data-answer="a">${currentQuizData.a}</button>
@@ -289,7 +290,7 @@ function showResults() {
 }
 
 function nextQuestion() {
-    numero++
+    numero++;
     if (selectedAnswer === quizData[currentCategory][currentQuestionIndex].correct) {
         scoreByCategory[currentCategory]++;
     }
@@ -346,8 +347,7 @@ let msg = document.getElementById("msg");
 let enviar = document.getElementById("env")
 
 cpf.addEventListener("input", () => {
-    let cpfmod = cpf.value.replace(/\D/g, "");
-
+    let cpfmod = cpf.value.replace(/\D/g, ""); 
     if (cpfmod.length === 0) {
         msg.innerText = ""; 
     }
@@ -363,25 +363,31 @@ cpf.addEventListener("input", () => {
     }
 
     if (cpfmod.length === 11) {
+        console.log(cpfmod);
         calcularCPF(cpfmod);
     }
 });
 
 function calcularCPF(cpfmod) {
     let soma = 0;
+    let cpfInvalidoString = '' + cpfmod;
+    let cpfValido = 0;
 
+    for (let i = 0;i < 10;i++){
+        if (cpfInvalidoString == cpfInvalido[i]){
+            cpfValido = 1;
+        }
+    }
+    console.log(cpfInvalidoString === cpfInvalido[1])
     for (let i = 0; i < 9; i++) {
         soma += cpfmod[i] * (10 - i); 
     }
-
     let primeiroDigito = (soma * 10) % 11;
     if (primeiroDigito === 10) {
         primeiroDigito = 0; 
     }
 
-    let validarcpf = validar(cpfmod);
-
-    if (primeiroDigito == cpfmod[9]) {
+    if (primeiroDigito == cpfmod[9] && cpfValido == 0) {
         soma = 0;
 
         for (let i = 0; i < 10; i++) {
@@ -393,7 +399,6 @@ function calcularCPF(cpfmod) {
         if (primeiroDigito === 10) {
             primeiroDigito = 0; 
         }
-
         if (primeiroDigito == cpfmod[10]) {
             console.log("CPF VALIDADO COM SUCESSO");
             msg.innerText = "CPF VÁLIDO";
@@ -416,3 +421,5 @@ function calcularCPF(cpfmod) {
         enviar.style.display = 'none';
     }
 }
+
+
