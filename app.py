@@ -1,6 +1,5 @@
 from flask import Flask,render_template,url_for,request
-from PIL import Image, ImageDraw
-from datetime import datetime
+from views import sobrenome, gerar_cert
 import sqlite3
 
 app = Flask(__name__)   
@@ -11,6 +10,9 @@ def Home():
 @app.route("/quiz")
 def quiz():
     return render_template('test-scrum.html')
+@app.route('/quemsomos')
+def quemsomos():
+    return render_template ('/quemsomos.html')
 
 @app.route('/insert', methods = ['POST','GET'])
 def insert():
@@ -38,6 +40,7 @@ def insert():
         finally:
             conn.close()
             return render_template('test-scrum.html')
+        
 @app.route('/delete', methods = ['POST','GET'])
 def delete():
     if request.method == 'POST':
@@ -54,6 +57,7 @@ def delete():
         finally:
             conn.close()
             return mostra()
+        
 @app.route('/mostrar')
 def mostra():
     conn = sqlite3.connect('database.db')
@@ -67,22 +71,6 @@ def mostra():
 @app.route('/certificado', methods=['POST'])
 def certificado():
     cpf = request.form['cpf']
-    nome = request.form['nome']
-    img = Image.open("./static/images/cert.png")
-    d = ImageDraw.Draw(img)
-    location = (425, 695)
-    text_color = (0, 0, 0)
-    font_size = 100
-    d.text(location, nome, fill=text_color, font_size=font_size)
-    current_date = datetime.now()
-    date_string = current_date.strftime("%d/%m/%Y")
-    date_location = (1500, 1100)
-    font_size = 50
-    d.text(date_location, date_string, fill=text_color, font_size=font_size)
-    cert = "./static/generated/" + nome + ".png"
-    img.save(cert)
+    nome = sobrenome(request.form['nome'])
+    cert = gerar_cert(nome)
     return render_template('certificado.html', cert = cert)
-
-@app.route('/quemsomos')
-def quemsomos():
-    return render_template ('/quemsomos.html')

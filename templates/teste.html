@@ -79,6 +79,13 @@
         </section>
       </div>
     </div>
+    <div>
+      <form action="{{url_for('delete')}}" method="POST">
+        <input type="hidden" name="nome" id="nome" value="Flora" placeholder="Nome"><br>
+        <input type="hidden" name="CPF" id="CPF" value="216.499.631-30" placeholder="CPF" maxlength="14"><br>
+        <button value="submit" id="env">Del</button>
+      </form>
+    </div>
     <footer class="container-fluid bg-dark">
       <section class="row h-10">
         <div class="col-fluid text-center text-white pt-4 pb-4">
