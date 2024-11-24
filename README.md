@@ -21,7 +21,7 @@ Sprint | Previsão | Status|
 |<p style="text-align">Sprint 1 |<p style="text-align"> 09/09 - 29/09 |<p style="text-align"> Concluída |
 |<p style="text-align">Sprint 2|<p style="text-align">07/10 - 27/10|<p style="text-align">Concluída |
 |<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Concluída|
-|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Em |
+|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Em breve|
 
 # Objetivo do Projeto
 Desenvolvimento de site informativo e educacional sobre o método Scrum.
