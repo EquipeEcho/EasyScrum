@@ -34,7 +34,7 @@ Desenvolvimento de site informativo e educacional sobre o método Scrum.
 # Funcionalidades e registros da Sprint:
 
 Apresentação das funcionalidades.
-<p>Confira a seguir uma demonstração do andamento do produto e suas funcionalidades clicando na imagem abaixo:</p>
+<p>Confira a seguir uma demonstração do produto e suas funcionalidades, clicando na imagem abaixo:</p>
 
 [![Nome do Vídeo](https://img.youtube.com/vi/RhitfLJMUBE/0.jpg)](https://youtu.be/RhitfLJMUBE?si=NCTdkYIslYfrlLxs)
 
