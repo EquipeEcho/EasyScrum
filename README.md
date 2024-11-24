@@ -20,8 +20,8 @@ Sprint | Previsão | Status|
 |<p style="text-align">Kick Off |<p style="text-align"> 02/09 - 06/09 | <p style="text-align"> Concluido |
 |<p style="text-align">Sprint 1 |<p style="text-align"> 09/09 - 29/09 |<p style="text-align"> Concluída |
 |<p style="text-align">Sprint 2|<p style="text-align">07/10 - 27/10|<p style="text-align">Concluída |
-|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Em andamento|
-|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Produto em andamento |
+|<p style="text-align">Sprint 3|<p style="text-align"> 04/11 - 24/11 |<p style="text-align"> Concluída|
+|<p style="text-align">Feira de Soluções |<p style="text-align"> 12/12/24 |<p style="text-align">Em |
 
 # Objetivo do Projeto
 Desenvolvimento de site informativo e educacional sobre o método Scrum.
@@ -33,9 +33,10 @@ Desenvolvimento de site informativo e educacional sobre o método Scrum.
 
 # Funcionalidades e registros da Sprint:
 
-Apresentação das funcionalidades.<p>Confira a seguir uma demonstração do andamento do produto e suas funcionalidades atuais:</p>
+Apresentação das funcionalidades.
+<p>Confira a seguir uma demonstração do andamento do produto e suas funcionalidades clicando na imagem abaixo:</p>
 
-[![Nome do Vídeo](https://img.youtube.com/vi/1GKDhLyRYvY/0.jpg)](https://youtu.be/1GKDhLyRYvY?si=34cEZr1cVi3cvraF)
+[![Nome do Vídeo](https://img.youtube.com/vi/RhitfLJMUBE/0.jpg)](https://youtu.be/RhitfLJMUBE?si=NCTdkYIslYfrlLxs)
 
 ## Tecnologias Utilizadas
 
